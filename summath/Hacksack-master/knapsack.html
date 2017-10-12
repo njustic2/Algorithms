@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knapsack Problem</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="knapsack.js"></script>
+        <link rel="stylesheet" type="text/css" href="knapsack.css">
+    </head>
+    <body>
+<!--
+        <h2>Hacksack</h2>
+        <p>You are a hacker who just infiltrated the most evil corporation in the world. You want to take some of their files to sell their secrets on the black market, but you only brought your 20GB flash drive with you. How can we decide what we should take?</p>
+        <p>Let's try out three possible strategies. Considering the items remaining in the server that will still fit in the flash drive, you will select your next item based on one of the following:</p>
+        <ol>
+        <li>"Max Value" - choose the item with the greatest value</li>
+        <li>"Min Weight" - choose the item with the least weight</li>
+        <li>"Max Value/Weight" - choose the item with the largest value-to-weight ratio</li>
+        </ol>
+        <p>Try out each strategy using the simulation below and record the total value of all the items in the flash drive.</p>
+-->
+        <div class="mainContainer" data-maxweight="20">
+            <div class='alert'>
+                <img src="resources/alert.png">
+            </div>
+            <div class='helpWindow'>
+                <img src="resources/helpdialog.png">
+            </div>
+            <div class="setting" id="server">
+                <div class="header">
+                    <img class='avatar' src="resources/servers.png">
+                </div>
+                <div class="items">
+                    <button class='ratioToggle' id='ratioToggle1'>
+                    <img src="resources/displayButtonBackground.png">
+                    </button>
+                    <div class="item">
+                        <img src="resources/polcon.PNG" data-value="175" data-weight="10" data-name="clock">
+                        <br><span>$175, 10GB</span>
+                    </div>
+                    <div class="item">
+                        <img src="resources/alg.png" data-value="90" data-weight="9" data-name="painting">
+                        <br><span>$90, 9GB</span>
+                    </div>
+                    <div class="item">
+                        <img src="resources/nukes.png" data-value="20" data-weight="4" data-name="radio">
+                        <br><span>$20, 4GB</span>
+                    </div>
+                    <br>
+                    <div class="item">
+                        <img src="resources/live.png" data-value="50" data-weight="2" data-name="vase">
+                        <br><span>$50, 2GB</span>
+                    </div>
+                    <div class="item">
+                        <img src="resources/nefa.png" data-value="10" data-weight="1" data-name="book">
+                        <br><span>$10, 1GB</span>
+                    </div>
+                    <div class="item">
+                        <img src="resources/alchemy.png" data-value="200" data-weight="20" data-name="computer">
+                        <br><span>$200, 20GB</span>
+                    </div>
+                </div>
+                <div class="footer">
+                    Click item to move to flash drive.
+                </div>
+            </div>
+
+
+
+            <div class="setting" id="knapsack">
+                <div class="header">
+                    <img class='avatar' src="resources/hacker.jpg">
+                    <span class="info">($0, 0GB)</span>
+                    <button class='reset'>
+                    <img src="resources/resetButton.png">
+                    </button>
+                </div>
+                <div class="items">
+                    <button class='help'>
+                    <img src="resources/helpbutton.png">
+                    </button>
+                    <div class="DUMMY">
+                        <img src="resources/1px.png">
+                    </div>
+                </div>
+                <div class="footer">
+                    Click item to move back to servers.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

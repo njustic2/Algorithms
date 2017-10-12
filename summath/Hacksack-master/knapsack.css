@@ -1,0 +1,124 @@
+.mainContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.alert {
+    position: absolute;
+    vertical-align: middle;
+    display: none;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    background: transparent;
+    left: 191px;
+    top: 250px;
+    color: white;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.helpWindow {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    width: 661px;
+    height: 392px;
+    left: 100px;
+    top: 135px;
+    z-index: 2;
+}
+
+.header {
+    align-content: center;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.header .avatar{
+    height: 100px;
+    vertical-align: middle;
+}
+
+.footer {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.setting {
+    float: left;
+    display: inline;
+    text-align: center;
+    margin: 5px;
+    width: 420px;
+    height: 432px;
+}
+
+.items {
+    width: 417px;
+    height: 443px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#DUMMY img {
+    visibility: hidden;
+}
+
+#server .items {
+    background-image: url('resources/serverviewlong.PNG');
+    background-color: #cccccc;
+}
+
+#knapsack .items {
+    background-image: url('resources/hackviewlong.PNG');
+    background-color: #cccccc;
+}
+
+#ratioToggle1 {
+    position: absolute;
+    left: 25px;
+    top: 179px;
+    background: transparent;
+    border: solid;
+    border-color: transparent;
+
+}
+
+.help {
+    position: absolute;
+    left: 782px;
+    top: 179px;
+    background: transparent;
+    border: solid;
+    border-color: transparent;
+}
+
+.reset {
+    position: absolute;
+    left: 460px;
+    top: 179px;
+    background: transparent;
+    border: solid;
+    border-color: transparent;
+}
+
+.item:nth-child(-n+3) {
+    margin-top: 100px;
+}
+
+.item {
+    display: inline-block;
+    text-align: right;
+    font-style: italic;
+    font-size: small;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 35px;
+    width: 80px;
+}
+
+#tableHeader {
+    text-align: left;
+}
